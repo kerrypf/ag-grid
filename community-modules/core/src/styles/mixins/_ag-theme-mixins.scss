@@ -17,8 +17,8 @@
 }
 
 @mixin ag-card() {
-    @extend %card !optional;
-
+    @include ag-grid-border();
+    
     background: $ag-card-background;
     border-radius: $ag-card-radius;
     box-shadow: $ag-card-shadow;

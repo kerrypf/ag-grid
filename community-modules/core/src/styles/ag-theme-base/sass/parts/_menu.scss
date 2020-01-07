@@ -67,8 +67,6 @@
     }
     
     .ag-tab {
-        @extend %tab !optional;
-
         // TODO structural styles
         display: flex;
         border-bottom: 2px solid transparent;
@@ -80,10 +78,6 @@
 
         @if $ag-full-width-tabs {
             flex: 1 1 auto;
-        }
-
-        &.ag-tab-selected {
-            @extend %selected-tab !optional;
         }
     }
 

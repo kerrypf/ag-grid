@@ -133,4 +133,8 @@
         @extend %selection-handle;
         cursor: nwse-resize;
     }
+
+    .ag-cell-highlight {
+        background-color: $ag-range-selection-highlight-color !important;
+    }
 }
