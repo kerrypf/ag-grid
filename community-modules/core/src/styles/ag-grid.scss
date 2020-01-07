@@ -531,6 +531,10 @@ ag-grid, ag-grid-angular, ag-grid-ng2, ag-grid-polymer, ag-grid-aurelia  {
     overflow: hidden;
 }
 
+.ag-column-drop-cell-button {
+    cursor: pointer;
+}
+
 .ag-filter-toolpanel {
     flex: 1;
 }

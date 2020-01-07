@@ -151,10 +151,6 @@
     $ag-header-height: $header-height !global;
   }
 
-  @if (variable-exists("icon-color") and not variable-exists("ag-icon-color")) {
-    $ag-icon-color: $icon-color !global;
-  }
-
   @if (variable-exists("icon-font-family") and not variable-exists("ag-icon-font-family")) {
     $ag-icon-font-family: $icon-font-family !global;
   }

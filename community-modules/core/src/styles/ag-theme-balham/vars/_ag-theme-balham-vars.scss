@@ -15,7 +15,6 @@ $ag-secondary-foreground-color: rgba($ag-foreground-color, 0.54) !default;
 $ag-disabled-foreground-color: rgba($ag-foreground-color, 0.38) !default;
 $ag-border-color: #BDC3C7 !default;
 $ag-row-border-color: #D9DCDE !default;
-$ag-icon-color: #7F8C8D !default;
 $ag-checkbox-background-color: $ag-default-background !default;
 $ag-alt-background: #ECF0F1 !default;
 $ag-odd-row-background-color: rgb(252, 253, 254) !default;
@@ -34,6 +33,10 @@ $ag-range-selection-chart-category-background-color: rgba(0, 255, 132, 0.1) !def
 $ag-range-selection-chart-background-color: rgba(0, 88, 255, 0.1) !default;
 $ag-range-selection-highlight-color: $ag-active !default;
 $ag-selected-color: lighten($ag-active, 40) !default;
+
+
+$ag-checkbox-color: #7F8C8D !default;
+$ag-checkbox-checked-color: $ag-active !default;
 
 $ag-background-color: $ag-default-background !default;
 

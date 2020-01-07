@@ -7,6 +7,10 @@
 
     @include ag-grid-theme();
 
+    .ag-tab {
+        height: $ag-grid-size * 4.5;
+    }
+
     .ag-tab-selected {
         border-bottom: 2px solid $ag-primary-color;
     }

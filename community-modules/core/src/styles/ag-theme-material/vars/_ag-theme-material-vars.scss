@@ -42,7 +42,8 @@ $ag-header-cell-moving-background-color: $ag-header-cell-hover-background-color 
 $ag-border-color: #e2e2e2 !default;
 $ag-primary-color: #3f51b5 !default;
 $ag-accent-color: #ff4081 !default;
-$ag-icon-color: #333 !default;
+
+$ag-checkbox-checked-color: $ag-accent-color !default;
 $ag-checkbox-background-color: transparent !default;
 
 $ag-editor-background-color: #fafafa !default;

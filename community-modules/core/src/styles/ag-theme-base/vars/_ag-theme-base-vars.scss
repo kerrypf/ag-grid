@@ -22,16 +22,13 @@ $ag-primary-color: null !default;
 // COLOURS
 //
 
-// The foreground colour / opacity is used for text in primary UI elements like menus
+// The foreground colour / opacity is used for text and icons in primary UI elements like menus
 $ag-foreground-color: #000 !default;
 
-// The data colour / opacity is used for text in grid cells
+// The data colour / opacity is used for text and icons in grid cells
 $ag-data-color: $ag-foreground-color !default;
 
-// The icon colour is used for information icons and icon buttons like the column menu button
-$ag-icon-color: $ag-foreground-color !default;
-
-// The secondary foreground colour / opacity is used for text in UI elements like
+// The secondary foreground colour / opacity is used for text and icons in UI elements like
 // headers and footers that need to be less emphasised so as not to draw too much attention
 $ag-secondary-foreground-color: $ag-foreground-color !default;
 
@@ -42,11 +39,18 @@ $ag-disabled-foreground-color: rgba($ag-foreground-color, 0.5) !default;
 // The background colour for the grid
 $ag-background-color: #fff !default;
 
+// Colours for checkboxes and similar components (toggle buttons, radio buttons)
+$ag-checkbox-color: $ag-foreground-color !default;
+$ag-checkbox-checked-color: $ag-foreground-color !default;
 $ag-checkbox-background-color: $ag-background-color !default;
+
+$ag-icon-button-color: $ag-secondary-foreground-color !default;
 
 // Background colour when a range of cells is selected. Should be transparent in order to
 // look good when multiple ranges overlap.
-$ag-range-selection-background-color: $ag-icon-color !default;
+$ag-range-selection-background-color: rgba($ag-foreground-color, 0.15) !default;
+
+
 
 $ag-header-foreground-color: $ag-secondary-foreground-color !default;
 
@@ -55,7 +59,6 @@ $ag-header-foreground-color: $ag-secondary-foreground-color !default;
 $ag-border-color: $ag-foreground-color !default;
 $ag-secondary-border-color: $ag-border-color !default;
 $ag-row-border-color: $ag-secondary-border-color !default;
-$ag-icon-color: lightgray !default;
 $ag-accent-color: transparent !default;
 $ag-selected-color: null !default;
 $ag-hover-color: null !default;

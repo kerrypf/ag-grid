@@ -9,11 +9,14 @@
             background-image: $ag-header-background-image;
         }
 
+        border-bottom: 1px solid $ag-border-color;
+    }
+    
+    .ag-header-row {
         color: $ag-header-foreground-color;
         font-weight: $ag-secondary-font-weight;
         font-size: $ag-secondary-font-size;
         font-family: $ag-secondary-font-family;
-        border-bottom: 1px solid $ag-border-color;
     }
 
     .ag-pinned-right-header {

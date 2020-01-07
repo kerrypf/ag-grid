@@ -34,8 +34,6 @@ $ag-border-color: $ag-alpine-gray-4 !default;
 // borders between body cells
 $ag-secondary-border-color: #dde2eb !default;
 
-$ag-color-icon: $ag-alpine-gray-3 !default;
-
 // range selection
 $ag-color-selected: lighten($ag-color-secondary, 40) !default;
 $ag-color-background-range-selection: transparentize($ag-color-selected, 0.8) !default;
@@ -118,6 +116,10 @@ $ag-size-font-status-bar: $ag-size-font-chrome - 1 !default;
 //
 //
 
+
+$ag-checkbox-color: $ag-alpine-gray-3 !default;
+$ag-checkbox-checked-color: $ag-color-primary !default;
+
 // Sizing
 $ag-grid-size: 6px !default;
 $ag-icon-size: 16px !default;
@@ -128,7 +130,6 @@ $ag-row-height: $ag-grid-size * 7 !default;
 $ag-default-background: $ag-color-background !default;
 $ag-background-color: $ag-default-background !default;
 
-$ag-icon-color: $ag-color-icon !default;
 $ag-checkbox-background-color: $ag-default-background !default;
 $ag-header-cell-moving-background-color: $ag-default-background !default;
 
@@ -191,7 +192,6 @@ $ag-cell-data-changed-color: $ag-color-cell-data-changed !default;
 $ag-value-change-delta-up-color: $ag-color-value-change-delta-up !default;
 $ag-value-change-delta-down-color: $ag-color-value-change-delta-down !default;
 $ag-value-change-value-highlight-background-color: $ag-color-value-change-value-highlight-background !default;
-$ag-icon-color: $ag-color-icon !default;
 $ag-input-height: $ag-grid-size * 4 !default;
 $ag-button-text-transform: uppercase !default;
 $ag-use-icons-for-pager-buttons: true !default;

@@ -108,7 +108,6 @@
   .ag-icon {
       font-family: '#{$ag-icon-font-family}';
       font-size: $ag-icon-size;
-      color: $ag-icon-color;
       font-style: normal;
       font-weight: normal;
       font-variant: normal;
@@ -199,13 +198,14 @@
         background-color: $ag-checkbox-background-color;
         line-height: $ag-icon-size;
         border-radius: 3px;
+        color: $ag-checkbox-color;
         &-readonly {
             cursor: default;
             opacity: opacity($ag-disabled-foreground-color);
         }
     }
     .ag-icon-checkbox-checked {
-        color: $ag-accent-color;
+        color: $ag-checkbox-checked-color;
         &-readonly:before {
             content: $ag-icon-checkbox-checked;
         }

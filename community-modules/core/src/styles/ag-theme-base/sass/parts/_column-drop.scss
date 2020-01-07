@@ -3,6 +3,7 @@
     
     .ag-column-drop-horizontal {
         background-color: $ag-panel-background-color;
+        color: $ag-secondary-foreground-color;
         height: $ag-row-height;
         @include ag-grid-border(bottom);
 
@@ -15,11 +16,11 @@
 
     .ag-column-drop-horizontal-cell-separator {
         margin: 0 $ag-grid-size;
-        opacity: opacity($ag-secondary-foreground-color);
+        color: $ag-secondary-foreground-color;
     }
 
     .ag-column-drop-horizontal-empty-message {
-        opacity: opacity($ag-disabled-foreground-color);
+        color: $ag-disabled-foreground-color;
     }
 
     .ag-column-drop-horizontal-icon {
@@ -41,11 +42,7 @@
         min-width: $ag-grid-size * 4;
 
         margin: 0 $ag-grid-size / 2;
-        opacity: opacity($ag-secondary-foreground-color);
-
-        &:hover {
-            opacity: opacity($ag-foreground-color);
-        }
+        color: $ag-secondary-foreground-color;
     }
     
     .ag-column-drop-cell-drag-handle {
