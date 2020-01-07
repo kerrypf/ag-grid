@@ -19,7 +19,7 @@
 @mixin ag-card() {
     @include ag-grid-border();
     
-    background: $ag-card-background;
+    background: $ag-background-color;
     border-radius: $ag-card-radius;
     box-shadow: $ag-card-shadow;
     padding: $ag-grid-size;
@@ -196,7 +196,7 @@
     .ag-icon-checkbox-checked,
     .ag-icon-checkbox-indeterminate,
     .ag-icon-checkbox-unchecked {
-        background-color: $ag-alt-icon-color;
+        background-color: $ag-checkbox-background-color;
         line-height: $ag-icon-size;
         border-radius: 3px;
         &-readonly {
@@ -217,4 +217,17 @@
         content: $ag-icon-checkbox-unchecked; 
     }
   }
+}
+
+@mixin ag-colour-self-overlay($color, $times) {
+    $solidity: 1 - opacity($color);
+    $output-solidity: 1;
+    @if $times > 0 {
+        @for $i from 1 through $times {
+            $output-solidity: $output-solidity * $solidity;
+        }
+    }
+    @debug $output-solidity;
+
+    background-color: rgba($color, 1 - $output-solidity);
 }

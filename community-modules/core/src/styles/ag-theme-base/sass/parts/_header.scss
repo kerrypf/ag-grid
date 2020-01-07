@@ -31,7 +31,7 @@
 
     .ag-header-label-icon {
         margin-left: $ag-grid-size;
-        opacity: $ag-foreground-opacity;
+        opacity: $ag-foreground-color-opacity;
     }
 
     .ag-header-cell,
@@ -59,7 +59,7 @@
     .ag-header-cell:not(.ag-column-resizing) + .ag-header-cell,
     .ag-header-group-cell:first-of-type,
     .ag-header-cell:first-of-type {
-        @if ($ag-header-background-color != $ag-header-cell-hover-background-color) {
+        @if ($ag-header-cell-hover-background-color and $ag-header-background-color != $ag-header-cell-hover-background-color) {
             &:hover,
             &.ag-column-resizing {
                 background-color: $ag-header-cell-hover-background-color;
@@ -123,7 +123,7 @@
         margin: 0;
         padding: 0;
         margin-right: $ag-grid-size;
-        opacity: $ag-foreground-opacity;
+        color: $ag-foreground-color;
     }
     
     .ag-floating-filter-button {
