@@ -118,10 +118,6 @@ $ag-size-font-status-bar: $ag-size-font-chrome - 1 !default;
 //
 //
 
-$ag-foreground-color-opacity: 1 !default;
-$ag-secondary-foreground-color-opacity: 1 !default;
-$ag-disabled-foreground-color-opacity: 1 !default;
-
 // Sizing
 $ag-grid-size: 6px !default;
 $ag-icon-size: 16px !default;
@@ -137,8 +133,8 @@ $ag-checkbox-background-color: $ag-default-background !default;
 $ag-header-cell-moving-background-color: $ag-default-background !default;
 
 // Derived from above
-$ag-secondary-foreground-color: rgba($ag-color-foreground, $ag-secondary-foreground-color-opacity) !default; // foreground-secondary
-$ag-disabled-foreground-color: rgba($ag-color-foreground, $ag-disabled-foreground-color-opacity) !default; // foreground-disabled
+$ag-secondary-foreground-color: $ag-color-foreground !default; // foreground-secondary
+$ag-disabled-foreground-color: $ag-color-foreground; // foreground-disabled
 $ag-input-border-color: $ag-color-border-form-element !default;
 $ag-input-disabled-background-color: $ag-color-background-form-element-disabled !default;
 

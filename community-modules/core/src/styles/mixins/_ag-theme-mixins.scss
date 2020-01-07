@@ -201,7 +201,7 @@
         border-radius: 3px;
         &-readonly {
             cursor: default;
-            opacity: $ag-disabled-foreground-color-opacity;
+            opacity: opacity($ag-disabled-foreground-color);
         }
     }
     .ag-icon-checkbox-checked {
@@ -227,7 +227,6 @@
             $output-solidity: $output-solidity * $solidity;
         }
     }
-    @debug $output-solidity;
 
     background-color: rgba($color, 1 - $output-solidity);
 }

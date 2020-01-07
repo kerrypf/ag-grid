@@ -5,12 +5,6 @@
 
 $ag-borders: false;
 
-// opacity values used for black values, taken from material spec
-$ag-foreground-color-opacity: 0.87 !default;
-$ag-data-color-opacity: 0.87 !default;
-$ag-secondary-foreground-color-opacity: 0.54 !default;
-$ag-disabled-foreground-color-opacity: 0.38 !default;
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 // The variables below can be overriden to adjust the look up to the app color scheme
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -37,6 +31,9 @@ $ag-secondary-font-size: 12px !default; // font-secondary-size
 $ag-secondary-font-weight: 700 !default; // font-secondary-weight
 
 // Colors
+$ag-foreground-color: rgba(#000, 0.87) !default;
+$ag-secondary-foreground-color: rgba($ag-foreground-color, 0.54) !default;
+$ag-disabled-foreground-color: rgba($ag-foreground-color, 0.38) !default;
 $ag-background-color: #fff !default;
 $ag-header-background-color: $ag-background-color !default;
 $ag-header-cell-hover-background-color: darken($ag-header-background-color, 5%) !default;
